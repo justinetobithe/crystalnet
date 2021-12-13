@@ -1,0 +1,1490 @@
+html {
+  scroll-behavior: smooth;
+ }
+
+/*--------------------
+ Font Enits
+---------------------*/
+@font-face {
+  font-family: 'lato black italic';
+  src: url('../fonts/lato/Lato-BlackItalic.eot');
+  src: local('Lato* BlackItalic'), local('Lato-BookItalic'),
+    url('../fonts/lato/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/Lato-BlackItalic.woff') format('woff'),
+    url('../fonts/lato/Lato-BlackItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+ 
+
+@font-face {
+  font-family: 'lato black';
+  src: url('../fonts/lato/Lato-Black.eot');
+  src: local('Lato* Black'), local('Lato-Black'),
+    url('../fonts/lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/Lato-Black.woff') format('woff'),
+    url('../fonts/lato/Lato-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lato regular';
+  src: url('../fonts/lato/Lato-Regular.eot');
+  src: local('Lato* Regular'), local('Lato-Regular'),
+    url('../fonts/lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/Lato-Regular.woff') format('woff'),
+    url('../fonts/lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lato bold';
+  src: url('../fonts/lato/Lato-Bold.eot');
+  src: local('Lato* Bold'), local('Lato-Bold'),
+    url('../fonts/lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/Lato-Bold.woff') format('woff'),
+    url('../fonts/lato/Lato-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lato semi bold';
+  src: url('../fonts/lato/Lato-Semibold.eot');
+  src: local('Lato* Semibold'), local('Lato-Semibold'),
+    url('../fonts/lato/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato/Lato-Semibold.woff') format('woff'),
+    url('../fonts/lato/Lato-Semibold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'poppins semi bold';
+  src: url('../fonts/poppins/Lato-Semibold.eot');
+  src: local('Poppins* Semibold'), local('Poppins-Semibold'),
+    url('../fonts/poppins/Poppins-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/poppins/Poppins-Semibold.woff') format('woff'),
+    url('../fonts/poppins/Poppins-Semibold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'poppins regular';
+  src: url('../fonts/poppins/Poppins-Regular.eot');
+  src: local('Poppins* Regular'), local('Poppins-Regular'),
+    url('../fonts/poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/poppins/Poppins-Regular.woff') format('woff'),
+    url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/*--------------------
+ Declare Fonts
+---------------------*/
+.theme .f_l_bi {
+  font-family: 'lato black italic';
+  font-weight: normal;
+  font-style: italic;
+}
+ 
+
+.theme .f_l_r {
+  font-family: 'lato regular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.theme .f_l_b {
+  font-family: 'lato black';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.theme .f_l_bld {
+  font-family: 'lato bold';
+  font-weight: bold;
+  font-style: normal;
+}
+
+.theme .f_l_smbld {
+  font-family: 'lato semi bold';
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+.theme .f_p_smbld {
+  font-family: 'poppins semi bold';
+  font-weight: bold;
+  font-style: normal;
+}
+
+.theme .f_p_r {
+  font-family: 'poppins regular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/*--------------------
+ Text
+---------------------*/
+.theme .t12 {
+  font-size: 12px;
+}
+
+.theme .t14 {
+  font-size: 14px;
+}
+
+.theme .t16 {
+  font-size: 16px;
+}
+
+.theme .t18 {
+  font-size: 18px;
+}
+
+.theme .t20 {
+  font-size: 20px;
+}
+
+.theme .t24 {
+  font-size: 24px;
+}
+
+.theme .t30 {
+  font-size: 30px;
+}
+
+.theme .t32 {
+  font-size: 32px;
+}
+
+.theme .t36 {
+  font-size: 36px;
+}
+
+.theme .t40 {
+  font-size: 40px;
+}
+
+.theme .t46 {
+  font-size: 46px;
+}
+
+.theme .t50 {
+  font-size: 50px;
+}
+
+
+
+/*--------------------
+ Padding / Margin
+---------------------*/
+
+.theme .nopadding {
+  padding: 0px;
+}
+
+.theme .p-r-0 {
+  padding-right: 0px;
+}
+
+.theme .p-r-10 {
+  padding-right: 10px;
+}
+
+.theme .p-r-15 {
+  padding-right: 15px;
+}
+
+.theme .p-r-20 {
+  padding-right: 20px;
+}
+
+.theme .p-r-25 {
+  padding-right: 25px;
+}
+
+.theme.p-l-0 {
+  padding-left: 0px;
+}
+
+.theme .p-l-10 {
+  padding-left: 10px;
+}
+
+.theme .p-l-15 {
+  padding-left: 15px;
+}
+
+.theme .p-l-20 {
+  padding-left: 20px;
+}
+
+.theme .p-l-25 {
+  padding-left: 25px;
+}
+
+.theme .p-l-40 {
+  padding-left: 40px;
+}
+
+.theme .p-t-0 {
+  padding-top: 0px;
+}
+
+.theme .p-t-10 {
+  padding-top: 10px;
+}
+
+.theme .p-t-20 {
+  padding-top: 20px;
+}
+
+.theme .p-t-30 {
+  padding-top: 30px;
+}
+
+.theme .p-t-40 {
+  padding-top: 40px;
+}
+
+.theme .p-t-60 {
+  padding-top: 60px;
+}
+
+.theme .p-t-80 {
+  padding-top: 80px;
+}
+
+.theme .p-t-100 {
+  padding-top: 100px;
+}
+
+.theme .p-t-120 {
+  padding-top: 120px;
+}
+
+.theme .p-t-140 {
+  padding-top: 140px;
+}
+
+.theme .p-t-150 {
+  padding-top: 150px;
+}
+
+.theme .p-b-0 {
+  padding-bottom: 0px;
+}
+
+.theme .p-b-10 {
+  padding-bottom: 10px;
+}
+
+.theme .p-b-20 {
+  padding-bottom: 20px;
+}
+
+.theme .p-b-30 {
+  padding-bottom: 30px;
+}
+
+.theme .p-b-40 {
+  padding-bottom: 40px;
+}
+
+.theme .p-b-60 {
+  padding-bottom: 60px;
+}
+
+.theme .p-b-80 {
+  padding-bottom: 80px;
+}
+
+.theme .p-b-100 {
+  padding-bottom: 100px;
+}
+
+.theme .p-b-120 {
+  padding-bottom: 120px;
+}
+
+.theme .p-b-140 {
+  padding-bottom: 140px;
+}
+
+.theme .m-r-0 {
+  margin-right: 0px;
+}
+
+.theme .m-r-10 {
+  margin-right: 10px;
+}
+
+.theme .m-r-15 {
+  margin-right: 15px;
+}
+
+.theme .m-r-20 {
+  margin-right: 20px;
+}
+
+.theme .m-r-25 {
+  margin-right: 25px;
+}
+
+.theme .m-l-0 {
+  margin-left: 0px;
+}
+
+.theme .m-l-10 {
+  margin-left: 10px;
+}
+
+.theme .m-l-15 {
+  margin-left: 15px;
+}
+
+.theme .m-l-20 {
+  margin-left: 20px;
+}
+
+.theme .m-l-25 {
+  margin-left: 25px;
+}
+
+.theme .m-t-0 {
+  margin-top: 0px;
+}
+
+.theme .m-t-10 {
+  margin-top: 10px;
+}
+
+.theme .m-t-20 {
+  margin-top: 20px;
+}
+
+.theme .m-t-30 {
+  margin-top: 30px;
+}
+
+.theme .m-t-40 {
+  margin-top: 40px;
+}
+
+.theme .m-t-50 {
+  margin-top: 50px;
+}
+
+
+.theme .m-t-60 {
+  margin-top: 60px;
+}
+
+.theme .m-t-80 {
+  margin-top: 80px;
+}
+
+.theme .m-t-100 {
+  margin-top: 100px;
+}
+
+.theme .m-t-120 {
+  margin-top: 120px;
+}
+
+.theme .m-t-150 {
+  margin-top: 150px;
+}
+
+.theme .m-b-0 {
+  margin-bottom: 0px;
+}
+
+.theme .m-b-10 {
+  margin-bottom: 10px;
+}
+
+.theme .m-b-20 {
+  margin-bottom: 20px;
+}
+
+.theme .m-b-30 {
+  margin-bottom: 30px;
+}
+
+.theme .m-b-40 {
+  margin-bottom: 40px;
+}
+
+.theme .m-b-50 {
+  margin-bottom: 50px;
+}
+
+.theme .m-b-60 {
+  margin-bottom: 60px;
+}
+
+.theme .m-b-80 {
+  margin-bottom: 80px;
+}
+
+.theme .m-b-100 {
+  margin-bottom: 100px;
+}
+
+.theme .m-b-120 {
+  margin-bottom: 120px;
+}
+
+.theme .m-b-150 {
+  margin-bottom: 150px;
+}
+
+
+/*--------------------
+  Border
+---------------------*/
+.theme .b-0 {
+  border: 0px;
+}
+
+/*--------------------
+ Color Names
+---------------------*/
+.theme .c_000 {
+  color: #000;
+}
+
+.theme .c_fff {
+  color: #fff;
+}
+
+.theme .c_0774ec {
+  color: #0774ec;
+}
+
+.theme .c_e8f1ff {
+  color: #e8f1ff;
+ }
+
+ .theme .c_81c158 {
+   color: #81c158;
+ }
+
+.theme .c_4ba6ff {
+  color: #4ba6ff;
+}
+
+.theme .c_222 {
+  color: rgb(34, 34, 34);
+}
+
+.theme .c_0088e9 {
+  color: #0088e9;
+}
+
+.theme .c_008ece {
+  color: #008ece;
+}
+
+.theme .c_2a7db1 {
+  color: #2a7db1;
+}
+
+.theme .c_f6f6f6 {
+  color: #f6f6f6;
+}
+
+.theme .c_b7b7b7 {
+  color: #b7b7b7;
+}
+
+.theme .c_3d9fe6 {
+  color: #3d9fe6;
+} 
+
+.theme .c_4b4b4b {
+  color: #4b4b4b;
+}
+
+
+/*--------------------
+ Background Colors
+---------------------*/
+.theme .b_transparent {
+  background: fixed;
+}
+
+.theme .b_e8f1ff {
+ background: #e8f1ff;
+}
+
+.theme .b_fff {
+  background: #fff;
+}
+
+.theme .b_122947 {
+  background: #122947;
+}
+
+.theme .b_f9f9f9 {
+  background: #f9f9f9;
+}
+
+.theme .b_122947 {
+  background: #122947;
+}
+
+/*--------------------
+  Line Height
+---------------------*/
+.theme .line-height {
+  line-height: 1.5;
+}
+
+.theme .line-height-2 {
+  line-height: 2;
+}
+
+/*--------------------
+  Z-Index
+---------------------*/
+.theme .z-index {
+  z-index: 1;
+}
+
+/*--------------------
+  Cross Browsing Theme Field
+---------------------*/
+.theme .field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(34, 34, 34, .5);
+}
+
+.theme .field::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(34, 34, 34, .5);
+}
+
+.theme .field::-ms-input-placeholder { /* IE 10+ */
+  color: rgba(34, 34, 34, .5);
+}
+
+.theme .field::-moz-placeholder { /* Firefox 18- */
+  color: rgba(34, 34, 34, .5);
+} 
+
+
+ 
+
+
+/*--------------------
+  Begin Header
+---------------------*/
+.theme header {
+  /* background: url('../images/background-section-1.png') no-repeat top center;
+  background-size: cover; */
+  background: transparent;
+  position: fixed;
+  top: 0px;
+}
+
+.theme .header .navbar-nav .nav-link:hover, 
+.theme .header .navbar-nav .nav-link:focus, 
+.theme .header .navbar-nav .nav-link:active, 
+.theme .header .navbar-nav .nav-item.active .nav-link {
+  color: #008ece;
+}
+
+.theme header .navbar {
+  padding: 15px;
+}
+
+.theme header .navbar-toggler {
+  padding: 10px 0px 10px 10px;
+  color: #4ba6ff;
+}
+
+.theme header .btn:hover,
+.theme header .btn:focus,
+.theme header .btn:active {
+  border: 1px solid #4ba6ff;
+  background: #fff !important;
+  color: #4ba6ff;
+}
+
+.theme header .navbar-toggler:hover,
+.theme header .navbar-toggler:focus,
+.theme header .navbar-toggler:active {
+  color: #222;
+}
+
+.theme header .navbar-collapse.show .nav-link:hover,
+.theme header .navbar-collapse.show .nav-link:focus,
+.theme header .navbar-collapse.show .nav-link:active {
+  color: #222;
+}
+
+.theme header .btn {
+  background-color: #4ba6ff; 
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  transition: all 0.3s ease 0s; 
+} 
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+
+/*--------------------
+  Header Below
+---------------------*/
+.theme .header.sps--blw {
+  background: url('../images/header-background.png') repeat-x scroll 0 0 transparent;
+  background-size: cover;
+}
+
+.theme .header.sps--blw .navbar {
+  padding-bottom: 5px;
+  padding-top: 5px;
+} 
+
+
+
+
+/*--------------------
+  Footer
+---------------------*/
+
+.theme footer ul {
+  text-decoration: none;
+  border: 0px;
+}
+ 
+.theme footer ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ 
+
+
+/*--------------------
+  Home Crystalnet section
+---------------------*/
+.theme .containment {
+  overflow: hidden;
+}
+
+
+.theme .crystal-net {
+  background: url('../images/background-section-1.png') no-repeat center center;
+  background-size: cover;
+}
+
+.theme .crystal-net .btn {
+  background-color: #4ba6ff; 
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  transition: all 0.3s ease 0s; 
+}
+
+.theme .crystal-net .link .btn {
+  margin-left: 20px;
+} 
+
+.theme .crystal-net button:first-of-type {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+.theme .crystal-net .nav-item .btn {
+  background-color: #4ba6ff;
+}
+
+.theme .crystal-net .btn:hover,
+.theme .crystal-net .btn:focus,
+.theme .crystal-net .btn:active {
+  border: 1px solid #4ba6ff;
+  background: #fff;
+  color: #4ba6ff;
+}
+
+.theme .business-solution .text-details {
+  margin-top: -100px;
+}
+
+.theme .business-solution .block {
+  border-radius: 15px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.theme .business-solution .items .col-12 img {
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  transition: all 0.3s ease 0s; 
+}
+ 
+ .theme .business-solution .items .col-12:nth-of-type(2),
+ .theme .business-solution .items .col-12:nth-of-type(4) {
+     padding-top: 0px;
+ }
+
+/* .theme .business-solution .automated-phone-system {
+  background: url('../images/automated-phone-system.png') no-repeat center center;
+  background-size: 100%;
+  height: 100%;
+} */
+
+
+
+
+/*--------------------
+  Home Crystalnet section
+---------------------*/ 
+.theme .crystal-voice-and-dash {
+  background: url('../images/background-section-2.png') no-repeat center center;
+  background-size: cover;
+}
+
+ 
+
+.theme .crystal-voice-and-dash .crystal-voice img,
+.theme .crystal-voice-and-dash .crystal-dash img {
+  position: relative; 
+  /* margin-left: 20px; */
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+
+/*--------------------
+  Home Crystal Voice and Dash section
+---------------------*/ 
+
+.theme .crystal-voice-and-dash .crystal-voice {
+  background: url('../images/crystal-voice.png') no-repeat center center;
+  background-size: cover; 
+  border-radius: 2px;  
+  margin-bottom: 0px !important;
+  float: left;
+  width: 50%;
+  margin-left: 0px;
+  
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  transition: all 0.3s ease 0s;  
+}
+
+.theme .crystal-voice-and-dash .crystal-dash {
+  background: url('../images/crystal-dash.png') no-repeat center center;
+  background-size: cover; 
+  border-radius: 2px;  
+  margin-bottom: 0px !important;
+  float: right;
+  width: 50%; 
+  margin-left: 0px;
+  
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  transition: all 0.3s ease 0s;  
+}
+ 
+.theme .crystal-voice-and-dash .view-website .btn {
+  background-color: #4ba6ff; 
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  transition: all 0.3s ease 0s; 
+  position: absolute;
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+
+.theme .crystal-voice-and-dash .article {   
+  z-index: 1; 
+  width: 100%; 
+}
+
+
+ 
+/*--------------------
+  Home Business Solution
+---------------------*/ 
+.theme .business-solution .arrow {
+  position: absolute;
+  margin-right: 325px;
+}
+
+/*--------------------
+  Home Customer Relationship Management
+---------------------*/ 
+ .theme .customer-relationship-management .crystal-dash-site {
+  width: 1500px;
+} 
+
+.theme .customer-relationshiop-management img {
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  transition: all 0.3s ease 0s; 
+}
+
+.theme .customer-relationship-management .white-block,
+.theme .voice-over-internet-protocol .white-block { 
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    transition: all 0.3s ease 0s; 
+}
+ 
+ 
+ 
+/*--------------------
+  Get in Touch
+---------------------*/ 
+.theme .get-in-touch .container {
+  margin-bottom: 35px; 
+}
+
+.theme .get-in-touch .intro .title {
+  margin-bottom: 15px;
+}
+
+.theme .get-in-touch .intro {
+  margin: 0px auto 40px;
+}
+
+.theme .get-in-touch .intro + .row {
+  margin: 0px auto;
+}
+
+.theme .get-in-touch .white-block {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  border-radius: 5px;
+  padding: 30px 15px;
+}
+
+.theme .get-in-touch .white-block .col-12:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.theme .get-in-touch .selectpicker .filter-option-inner,
+.theme .get-in-touch .selectpicker .filter-option-inner-inner  { 
+  height: 100%;
+  top: 0;
+  padding-top: 0px;
+  bottom: 0; 
+  /* color: #4b4b4b; */
+  
+} 
+.theme .get-in-touch .selectpicker .btn {
+  height: 100%;
+}
+
+.theme .get-in-touch .field {
+  background: #f6f6f6;
+  height: 40px;
+  border: 0px; 
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  transition: all 0.3s ease 0s; 
+}
+ 
+.theme .get-in-touch textarea.field {
+  height: 110px;
+}
+
+.theme .get-in-touch .send-message  .btn {
+  background-color: #4ba6ff;  
+  display: inline; 
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  transition: all 0.3s ease 0s; 
+}
+
+.theme .get-in-touch .send-message .btn:hover,
+.theme .get-in-touch .send-message .btn:focus,
+.theme .get-in-touch .send-message .btn:active {
+  border: 1px solid #4ba6ff;
+  background: #fff;
+  color: #4ba6ff;
+}  
+
+
+/*--------------------
+  Contact Us
+---------------------*/
+.theme .contact-us {
+  background: url('../images/contact-us/background.png') no-repeat center center;
+  background-size: cover;
+}
+
+.theme .contact-us .contact {
+  border: 1px solid transparent; 
+  border-radius: 20px; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.theme .contact-us .contact-details {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.theme .contact-us .left {
+  margin-left: -10px; 
+} 
+
+.theme .contact-us .right {
+  margin-left: 10px;
+}
+
+.theme .contact-us .contact:hover,
+.theme .contact-us .contact:focus,
+.theme .contact-us .contact:active {
+  border: 1px solid #000;
+  background: transparent;
+  color: #4ba6ff;
+}
+
+
+.theme .contact-us .row .nav {
+  text-decoration: none;
+  border: 0px; 
+}
+
+.theme .contact-us .row .nav .nav-item a {
+  background: #fff; 
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.theme .contact-us .row .nav ul {
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+  transition: all 0.3s ease 0s; 
+
+}
+
+.theme .contact-us .card:hover,
+.theme .contact-us .card:active,
+.theme .contact-us .card:focus {
+  border: 1px solid #000;
+}
+
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+  color: #fff !important;
+  background: #3d9fe6 !important; 
+  border: 0px !important;
+}
+
+.theme .contact-us .card {
+    max-width: 100%;
+}
+
+
+.theme .contact-us .row .nav-item {
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 1px;
+}
+ 
+
+.nav-tabs .nav-link {
+  border: 0px !important;
+  border-top-left-radius: .25rem !important;
+  border-top-right-radius: .25rem !important;
+}
+
+
+/*--------------------
+    Our Services
+  ---------------------*/
+
+  .theme .our-services {
+    background: url('../images/our-services/background.png') no-repeat center center;
+    background-size: cover;
+  }
+
+
+  .theme .our-services .btn-schedeule-meeting {
+    background-color: #fff; 
+    color: #4ba6ff;
+    border: 1px solid #4ba6ff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    transition: all 0.3s ease 0s;  
+  }
+   
+  
+  .theme .our-services .btn-schedeule-meeting:hover,
+  .theme .our-services .btn-schedeule-meeting:focus,
+  .theme .our-services .btn-schedeule-meeting:active {
+    border: 1px solid #4ba6ff;
+    background: #4ba6ff;
+    color: #fff;
+  }
+
+  .theme .our-services .crm_site {
+    display: block;
+    position: relative; 
+  }
+  
+  /* .theme .our-services .laptop {
+    background: url('../images/our-services/web-site.png') no-repeat center center;
+    background-size: 100% 100%;
+
+  } */
+
+
+  /*--------------------
+    About Us
+  ---------------------*/
+
+  .theme .about-us {
+    background: url('../images/about-us/background.png') no-repeat center center;
+    background-size: cover;
+  }
+
+  .theme .about-us .title_span {
+    
+    display: block;
+  }
+
+  .theme .about-us .title_span:before {
+    
+    display: inline-block;
+  }
+
+  .theme .about-us .business-solution .white-block:active,
+  .theme .about-us .business-solution .white-block:hover,
+  .theme .about-us .business-solution .white-block:focus {
+    background: #fff;
+    border-radius: 10px;
+  }
+
+  .theme .about-us .vision-mission {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw; 
+  }
+
+  .theme .about-us .vision-mission .mission {
+    background: #fff;
+    border-radius: 10px;
+    border: 5px solid #fff;
+
+    float: left;
+    width: 50%; 
+    
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    transition: all 0.3s ease 0s;  
+
+    color: #000;
+  }
+
+  .theme .about-us .vision-mission .vision {
+    background: #fff;
+    border-radius: 10px;
+    border: 5px solid #fff;
+
+    float: right;
+    width: 50%; 
+    
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+    transition: all 0.3s ease 0s;  
+
+    color: #000; 
+  }
+
+
+  .theme .about-us .vision-mission .article {   
+    z-index: 1; 
+    width: 100%; 
+  }
+
+  .theme .about-us .vision-mission .vision:hover,
+  .theme .about-us .vision-mission .vision:active,
+  .theme .about-us .vision-mission .vision:focus{
+    
+    color: #fff;
+    background: #4ba6ff;
+    border-radius: 10px;
+    border: 5px solid #4ba6ff;
+    
+    text-decoration: none;
+  } 
+
+  .theme .about-us .vision-mission .mission:hover,
+  .theme .about-us .vision-mission .mission:active,
+  .theme .about-us .vision-mission .mission:focus{
+    
+    color: #fff;
+    background: #4ba6ff;
+    border-radius: 10px;
+    border: 5px solid #4ba6ff;
+    
+    text-decoration: none;
+  } 
+
+
+
+@media (max-width: 575.98px) {
+  .theme .crystal-voice-and-dash .row .col-6:first-of-type {
+    margin-bottom: 100px;
+  }
+
+  /*--------------------
+    Our Services
+  ---------------------*/
+
+  .theme .our-services .crm_site { 
+    max-width: 100%;
+    height: auto; 
+    right: 0px;
+  }
+ 
+ }
+
+
+
+@media only screen and (min-width: 320px) {
+  /*--------------------
+    Header
+  ---------------------*/
+  .theme .company-logo {
+      width: 150px;
+  }
+  
+    
+  .theme .our-services .crm_site {   
+    height: auto; 
+  }
+  /*--------------------
+    Home
+  ---------------------*/
+  .theme .crystal-voice-and-dash .crystal-voice {
+    margin-bottom: 100px;
+  }
+
+  .theme .crystal-voice-and-dash .crystal-dash { 
+    margin-top: 150px !important;
+  }
+  
+  .theme .business-solution .arrow {
+    float: right;
+      margin-top: -630px;
+    margin-right: -1280px;
+    position: absolute;
+   }
+   
+   .theme .business-solution .items .col-12:nth-of-type(2),
+   .theme .business-solution .items .col-12:nth-of-type(4) {
+     padding-top: 0px;
+   }
+   
+   /*.theme .customer-relationship-management .col-12 {*/
+   /*    padding: 0px;*/
+   /*}*/
+    
+
+  /*--------------------
+    About us
+  ---------------------*/
+  .theme .about-us .vision-mission .mission {
+    margin-bottom: 50px;
+  }
+
+  .theme .about-us .vision-mission .vision { 
+    margin-top: 50px !important;
+  }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 576px) {
+  /*--------------------
+    Header
+  ---------------------*/
+  .theme header .bottom .logo-link {
+    width: 170px !important;
+  }
+  /* END header */
+
+  .theme .crystal-voice-and-dash .row .col-6:first-of-type {
+    /* padding-bottom: 100px; */
+  }
+ 
+
+  /*--------------------
+    Home
+  ---------------------*/
+  .theme .crystal-voice-and-dash .crystal-voice {
+    margin-bottom: 0px;
+  }
+  
+  .theme .view-website: {
+      padding-top: 79px;
+  }
+  
+  .theme .business-solution .arrow {
+    float: right;
+    margin-right: -950px;
+    margin-top: -390px;
+   }
+   
+   /*.theme .customer-relationship-management .white-block, .theme .voice-over-internet-protocol .white-block {*/
+   /*  margin-left: 0px;  */
+   /*  width: 100%;*/
+   /*}*/
+   
+
+  /*--------------------
+    Get in Touch
+  ---------------------*/
+  .theme .get-in-touch .selectpicker .filter-option-inner,
+  .theme .get-in-touch .selectpicker .filter-option-inner-inner  { 
+    padding-top: 0px;
+  }
+
+
+  /*--------------------
+    Our Services
+  ---------------------*/
+  .theme .our-services .crm_site {  
+    right: 0px !important;
+  }
+ 
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+  /* BEGIN header */
+  .theme .header .bottom .logo-link {
+    width: 200px !important;
+  }
+  /* END header */
+ 
+  /*--------------------
+    Home
+  ---------------------*/ 
+  .theme .crystal-voice-and-dash .crystal-voice {
+    margin-left: -15px; 
+    margin-bottom: 0px;
+  }
+  
+  .theme .crystal-voice-and-dash .crystal-dash {
+    margin-left: 15px; 
+    margin-top: 0px !important;
+  }
+  .theme .business-solution .arrow {
+    float: right;
+    margin-top: -320px;
+    margin-right: -700px;
+   }
+   
+   .theme .business-solution .items .col-12:nth-of-type(2),
+   .theme .business-solution .items .col-12:nth-of-type(4) {
+     padding-top: 0px;
+   }
+   
+   .theme .customer-relationship-management .white-block, .theme .voice-over-internet-protocol .white-block {
+     margin-left: 0px;  
+     width: 100%;
+   }
+
+  /*--------------------
+    About us
+  ---------------------*/
+  .theme .about-us .vision-mission .mission {
+    margin-left: -15px; 
+    margin-bottom: 0px;
+  }
+
+  .theme .about-us .vision-mission .vision { 
+    margin-left: 15px; 
+    margin-top: 0px !important;
+  }
+
+  /*--------------------
+    Our Services
+  ---------------------*/
+  .theme .our-services .crm_site { 
+    right: 50px !important;   
+  }
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+  /*--------------------
+    Get in Touch
+  ---------------------*/
+  .theme .get-in-touch .selectpicker .filter-option-inner,
+  .theme .get-in-touch .selectpicker .filter-option-inner-inner  { 
+    padding-top: 0px; 
+  }
+
+  /*--------------------
+    Home
+  ---------------------*/
+  .theme .crystal-voice-and-dash .crystal-voice {
+    margin-bottom: 0px;
+  }
+  .theme .business-solution .arrow {
+    float: right;
+    margin-right: -10px;
+    margin-top: 115px;
+   }
+    
+   .theme .customer-relationship-management .white-block, .theme .voice-over-internet-protocol .white-block {
+     margin-left: 0px;  
+     width: 100%;
+   }
+  
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+  /*--------------------
+    Leave us a Message
+  ---------------------*/
+  .theme .get-in-touch .white-block {
+    padding: 45px 15px;
+  }
+
+  .theme .get-in-touch .white-block .col-12:first-of-type {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+ 
+
+  .theme .get-in-touch .white-block .col-12:nth-of-type(3) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+ 
+
+  .theme .get-in-touch .white-block .col-12:nth-of-type(5) {
+    padding-left: 15px;
+  }
+
+  .theme .get-in-touch .white-block .field:not(textarea) {
+    height: 50px;
+  }
+
+  .theme .get-in-touch .white-block .send-message .btn {
+    margin: 0px auto;
+    display: block;
+    width: 20%;
+  }
+
+  theme .get-in-touch .selectpicker .filter-option-inner,
+  .theme .get-in-touch .selectpicker .filter-option-inner-inner  { 
+    padding-top: 3px; 
+  }
+
+  /*--------------------
+    Home
+  ---------------------*/
+  .theme .crystal-voice-and-dash .crystal-voice {
+    margin-bottom: 0px;
+  } 
+  
+  .theme .business-solution .arrow {
+    float: right;
+    margin-right: 220px;
+    margin-top: 0px;
+   }
+
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+  /*--------------------
+    Get in Touch
+  ---------------------*/
+  .theme .get-in-touch .selectpicker .filter-option-inner,
+  .theme .get-in-touch .selectpicker .filter-option-inner-inner  { 
+    padding-top: 3px; 
+  }
+
+  /*--------------------
+    Home
+  ---------------------*/
+  .theme .crystal-voice-and-dash .crystal-voice {
+    margin-bottom: 0px;
+  }
+} 
